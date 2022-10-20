@@ -29,7 +29,7 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
-   
+    min-width:23.4375rem;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -57,12 +57,11 @@ h2{
 }
 
 
-
 .block-header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 248px;
+    min-height: 15.5rem;
 }
 
 .container, .text-header, .footer-cls{
@@ -123,32 +122,42 @@ footer{
 
 
 /* Button styling */
-.button-cls{
-    display: inline-flex;
-    align-items: center;
-}
-.button-img{
-    background-color: var(--gold);
-    width: 3.5rem;
-    height: 4.5rem;
-    display: flex;
-    align-items: center;  
-    justify-content: center; 
-}
 .button-cls a{
-    font-size: 1.25rem;
-    font-family: var(--shoulders-font);
-    font-weight: var(--bold);
+    display: inline-flex;
+    text-decoration: none;
+}
+.button-cls p{
     background-color: var(--almost-black);
     color: var(--white);
     width: 12.75rem;
-    height: 4.5rem;    
+    height: 3.5rem;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    font-family: var(--shoulders-font);
+    font-size: 1.25rem;
+    letter-spacing: 0,2275rem;
+
 }
-/* */
+.button-img{
+    background-color: var(--gold);
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-cls a:hover{
+    cursor: pointer;
+}
+/* 
+add hover effect
+
+*/
+/* !!! Rewrite button style !!!*/
 
 /* different color blocks*/
 .block-w{
@@ -167,3 +176,4 @@ footer{
     display: inline-flex;
     justify-content: space-between;
 }
+
