@@ -23,13 +23,6 @@
     --body-s: 1.125rem; /*18px*/
 }
 
-/* Temporary */
-.icon{
-    background-color: black;
-}
-img{
-    background-color: var(--gold);
-}
 
 
 body{
@@ -41,6 +34,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 h2{
@@ -54,13 +48,7 @@ h2{
     min-height: 15rem;
 }
 
-footer{
-    width: 100%;
-    background-color: var(--almost-black);
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-}
+
 
 .text-header{
     font-family: var(--shoulders-font);
@@ -73,12 +61,16 @@ footer{
 .block-header{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 248px;
 }
 
 .container, .text-header, .footer-cls{
     width: 21.4375rem;
+}
+
+.content{
+    margin: 7.5rem 0;
 }
 
 .container p{
@@ -105,15 +97,24 @@ footer{
 }
 
 footer{
+    width: 100%;
+    background-color: var(--almost-black);
+    color: var(--white);
     display: flex;
+    justify-content: space-around;
+    height: 21rem;
 }
-.footer-cls h2{
+
+.logo{
     width: 6.875rem;
     height:2.5rem;
-    font-size: 10px;
+}
+.footer-cls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .footer-cls p{
-    
     font-family: var(--outfit-font);
     font-size: 1rem;
     font-weight: var(--light);
@@ -159,4 +160,10 @@ footer{
 }
 .block-b p, .block-b h2{
     color: var(--white);
+}
+
+.social{
+    width: 6.25rem;
+    display: inline-flex;
+    justify-content: space-between;
 }
