@@ -31,44 +31,41 @@ body{
     margin: 0;
     min-width:23.4375rem;
     background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
 }
-
 h2{
     text-transform: uppercase;
     font-weight: var(--very-bold);
 }
-.line2{
-    display: inline-block;
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+main{
+    width: 100vw;
 }
 
-
-
-.text-header{
+header div h2{
     font-family: var(--shoulders-font);
     font-size: var(--heading-m);
     color: var(--almost-black);
 }
 
-
-.block{
+header div{
+    width: 343px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.block h2, .block p{
-    min-width: 18.4375rem;
-    min-height: 5.625rem;
+
+#middle, #last{
+    width: 343px;
 }
 
-.block h2{
-    font-family: var(--shoulders-font);
-    font-size: var(--heading-50);
-}
+
+
+
 
 footer{
     width: 100%;
@@ -129,18 +126,6 @@ footer{
     cursor: pointer;
 }
 
-
-/* different color blocks*/
-.block-w{
-    background-color: var(--white);
-    color: var(--almost-black);
-}
-.block-b{
-    background-color: var(--almost-black);
-}
-.block-b p, .block-b h2{
-    color: var(--white);
-}
 
 .social{
     width: 6.25rem;
