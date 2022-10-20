@@ -44,9 +44,6 @@ h2{
 .line2{
     display: inline-block;
 }
-.image-header{
-    min-height: 15rem;
-}
 
 
 
@@ -57,28 +54,6 @@ h2{
 }
 
 
-.block-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 15.5rem;
-}
-
-.container, .text-header, .footer-cls{
-    width: 21.4375rem;
-}
-
-.content{
-    margin: 7.5rem 0;
-}
-
-.container p{
-    font-family: var(--outfit-font);
-    font-size: var(--body-s);
-    font-weight: var(--light);
-    color: var(--dark-gray);
-}
-
 .block{
     display: flex;
     flex-direction: column;
@@ -86,8 +61,8 @@ h2{
 }
 
 .block h2, .block p{
-    width: 18.4375rem;
-    height: 5.625rem;
+    min-width: 18.4375rem;
+    min-height: 5.625rem;
 }
 
 .block h2{
@@ -153,11 +128,7 @@ footer{
 .button-cls a:hover{
     cursor: pointer;
 }
-/* 
-add hover effect
 
-*/
-/* !!! Rewrite button style !!!*/
 
 /* different color blocks*/
 .block-w{
@@ -177,6 +148,28 @@ add hover effect
     justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+    #header-tablet, #header-desktop{
+        display: none;
+    }
+    #header-mobile{
+        display: block;
+    }
+    .tablet,.desktop{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    .mobile,.desktop{
+        display: none;
+    }
+    body{
+        width: 100%;
+    }
     
+    #header-mobile, #header-desktop{
+        display: none;
+    }
+
 }
