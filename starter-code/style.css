@@ -176,7 +176,7 @@ footer p{
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #header-tablet, #header-desktop{
         display: none;
     }
@@ -219,7 +219,16 @@ footer p{
     }
     #middle{
         display: inline-flex;
+        justify-content: space-between;
         flex-direction: row-reverse;
+    }
+    #middle p{
+        width: 223px;
+        height: 140px;
+    }
+    #middle h2{
+        width: 223px;
+        height: 135px;
     }
 
     .black{
@@ -255,7 +264,6 @@ footer p{
         width: 281px;
     }
 
-    
     
 
 }
