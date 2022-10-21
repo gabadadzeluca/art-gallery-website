@@ -51,7 +51,7 @@ header div h2{
     color: var(--almost-black);
 }
 
-header div{
+.header-box{
     width: 21.4375rem;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,6 @@ h2{
 #middle h2{
     font-size: var(--heading-50);
 }
-
 
 
 .black p{
@@ -189,12 +188,50 @@ footer p{
     .mobile,.desktop{
         display: none;
     }
+    #header-mobile, #header-desktop{
+        display: none;
+    }
+    #header-tablet{
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+    }
     body{
         width: 100%;
     }
-    
-    #header-mobile, #header-desktop{
-        display: none;
+
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }    
+    .header-box{
+        min-width: 339px;
+        min-height: 410px;
+    }
+    #middle, #last{
+        width: 689px;
+    }
+    #middle{
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+
+    .black{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        align-items: center;
+    }
+    .black p, .black h2{
+        width: 13.9375rem;
+    }
+
+    #last{
+        display: grid;
+        grid-gap: 11px;
+        grid-template-columns: 398px 280px;
+        grid-template-rows:313px 396px;
     }
 
 }
