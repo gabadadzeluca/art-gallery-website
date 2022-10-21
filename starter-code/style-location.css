@@ -88,65 +88,61 @@ body{
     z-index: -1;
 }
 
-.container{
-    width: 100%;
-    height: 493px;
+.middle{
+    min-height: 493px;
+    background-color: var(--almost-black);
+    color: var(--white);
     display: flex;
     justify-content: center;
-    background-color: var(--almost-black) ;
+    justify-items: space-around;
 }
-
-.block{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: var(--white);
+.middle p{
+    font-size: 1.125rem; 
 }
-.block h2{
+.address{
+    line-height: 0.5rem;
+    min-height: 5.25rem;
+}
+.middle h2{
     font-size: var(--heading-50);
-    color: var(--white);
     margin: 0;
 }
-.block h3{
+.middle h3{
     font-size: 2rem;
     color: var(--gold);
     margin: 0;
 }
-.block p{
-    font-size: var(--body-s);
-    color: var(--white);
-    margin: 0;
-    line-height: 1.75rem;
-}
-
-.block, .footer-cls{
-    width:21.4375rem;;
-}
-footer{
-    display: flex;
-    justify-content: center;
-    height: 21rem;
-    background-color: var(--gold);
-}
-
-.footer-cls{
+.middle-box{
+    width: 21.4375rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.footer-cls p{
+
+
+/* footer styles*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 21rem;
+    background-color: var(--gold);
+}
+.footer-box{
+    width: 19.4375rem;
+}
+.footer-box p{
     font-size: 1rem;
     font-weight: var(--light);
     color: var(--almost-black);
     line-height: 1.75rem;
 }
-
 .logo{
     width: 6.875rem;
     height:2.5rem;
     margin: 0;
 }
-
 .social{
     width: 6.25rem;
     display: inline-flex;
@@ -155,5 +151,23 @@ footer{
 
 
 
+@media screen and (max-width: 768px) {
+    .mobile{
+        display: block;
+    }
+    .desktop, .tablet{
+        display: none;
+    }
+}
 
-
+@media screen and (min-width:768px) {
+    .mobile, .desktop{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    .block, .footer-cls{
+        width:768px;
+    }
+}
