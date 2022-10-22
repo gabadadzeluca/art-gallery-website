@@ -78,12 +78,18 @@ body{
     align-items: center;
     justify-content: center;
 }
-.button-cls a:hover{
+.button-cls:hover{
     cursor: pointer;
+
 }
 
 .map{
-    min-width: 100vw;
+    width: 100vw;
+}
+
+.icon:hover{
+   cursor: pointer;
+   filter: invert(0.6);
 }
 
 main{
@@ -213,6 +219,48 @@ footer{
     .button-cls{
         left: 5%;
     }
-    
+}
 
+@media screen and (min-width: 1200px) {
+    .mobile, .tablet{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+   
+    .main-cls{
+        width: 1100px;
+        justify-content: space-around;
+    }
+    .main-cls h2{
+        font-size: var(--heading-l);
+        line-height: var(--heading-l);
+        width: 310px;
+    }
+    .main-cls h3{
+        font-size: var(--heading-s);
+    }
+    .main-cls p{
+        font-size: var(--body-m);
+        line-height: 2rem;
+    }
+    .details{
+        width: 540px;
+    }
+
+
+    /* footer styles */
+    .footer-cls{
+        width: 1100px;
+        justify-content: space-around;
+    }
+    .footer-cls> img{
+        width: 160px;
+        height: 58px;
+    }
+    .footer-cls p{
+        width: 430px;
+        font-size: var(--body-s);
+    }
 }
