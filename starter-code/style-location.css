@@ -175,10 +175,43 @@ footer{
         height: fit-content;
         justify-content: space-between;
     }
+    
+    
+    main{
+        align-items: center;
+    }
+    main h2{
+        width: 110px;
+    }
+    .main-cls{
+        width: 689px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .details{
+        width: 398px ;
+    }
 
+
+    .footer-cls{
+        width: 689px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-info{
+        width: 281px;
+        height: 104px;
+    }
     footer p{
         width: 281px;
         margin: 0;
+    }
+
+    .button-cls{
+        left: 5%;
     }
     
 
