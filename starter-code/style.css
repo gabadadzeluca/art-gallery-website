@@ -206,13 +206,14 @@ footer p{
     }
 
     header{
-        display: flex;
-        width: 100%;
+        width: 689px;
         justify-content: flex-end;
+        display: flex;
     }    
     .header-box{
         min-width: 339px;
         min-height: 410px;
+        
     }
     #middle, #last{
         width: 689px;
@@ -221,6 +222,7 @@ footer p{
         display: inline-flex;
         justify-content: space-between;
         flex-direction: row-reverse;
+        margin-top: 389px;
     }
     #middle p{
         width: 223px;
