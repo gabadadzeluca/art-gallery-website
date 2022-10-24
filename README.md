@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](assignment-6-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/gabadadzeluca/art-gallery-website)
+- Live Site URL: [Live URL](https://gabadadzeluca.github.io/art-gallery-website/index.html)
 
 ## My process
 
