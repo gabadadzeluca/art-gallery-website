@@ -80,8 +80,14 @@ body{
 }
 .button-cls:hover{
     cursor: pointer;
-
 }
+.button-cls:hover p{
+    background-color: var(--gold);
+}
+.button-cls:hover span{
+    background-color: var(--almost-black);
+}
+
 
 .map{
     width: 100vw;
@@ -228,7 +234,6 @@ footer{
     .desktop{
         display: block;
     }
-   
     .main-cls{
         width: 1100px;
         justify-content: space-around;
