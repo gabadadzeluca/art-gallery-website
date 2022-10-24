@@ -31,6 +31,7 @@ body{
     margin: 0;
     min-width:23.4375rem;
     background-color: var(--white);
+    overflow-x: hidden;
     
 }
 .icon{
@@ -47,10 +48,11 @@ body{
     min-height: 100vh;
     align-items: center;
 }
-main{
-    width: 100%;
+.header-img{
     display: flex;
     justify-content: center;
+    position: relative;
+    width: 100%;
 }
 
 header div h2{
@@ -181,7 +183,7 @@ footer p{
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #header-tablet, #header-desktop{
         display: none;
     }
@@ -216,8 +218,8 @@ footer p{
         display: flex;
     }    
     .header-box{
-        min-width: 339px;
-        min-height: 410px;
+        width: 339px;
+        height: 410px;
         
     }
     #middle, #last{
@@ -254,7 +256,7 @@ footer p{
         grid-template-rows:313px 396px;
     }
     footer{
-        width: 100%;
+        width: 100vw;
         height: 216px;
         display: flex;
         align-items: center;
@@ -273,6 +275,9 @@ footer p{
 
 }
 
+
+
+
 @media screen and (min-width: 1200px) {
     .mobile, .tablet{
         display: none;
@@ -280,6 +285,59 @@ footer p{
     .desktop{
         display: block;
     }
+
+    header{
+        display: flex;
+        justify-content: center;
+        width: 1110px;
+    }
+    .wrapper{
+        max-width: 1400px;
+    }
+    /* EDIT BELOVE STYLE*/
+    #header-desktop{
+        width: 540px;
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    /* header style*/
+    .header-img{
+        max-width: 1400px;
+        position: relative;
+    }
+    #block-header{
+        position: absolute;
+        left: 0;
+        width: 450px;
+        height: 799px;
+        background-color:var(--almost-black);
+        z-index: -1;
+    }
+    .header-div>p{
+        width: 350px;
+        height: 160px;
+    }
+    .header-box h2{
+        font-size: var(--heading-xl);
+        width: 517px;
+        height: 176px;
+        mix-blend-mode: difference;
+        color: var(--white);
+    }
+    .header-box{
+        /* EDIT */
+        position: relative;
+        width: 1110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 180px;
+    }
+
+    /* */
     #middle, #last{
         width: 1110px;
     }
@@ -307,6 +365,7 @@ footer p{
     
     /* footer*/
     footer{
+        width: 100vw;
         height: 244px;
     }
     .footer-cls{
@@ -316,5 +375,4 @@ footer p{
     .footer-cls p{
         width: 430px;
     }
-
 }
